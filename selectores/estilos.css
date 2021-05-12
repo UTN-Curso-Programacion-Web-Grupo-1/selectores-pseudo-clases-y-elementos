@@ -1,0 +1,45 @@
+div[id] {
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+/* Selector ">": Selecciona el hijo directo */
+#selector_hijos div > p {
+    color: blue;
+}
+
+/* Selector "+": Selector de hermanos adyacentes */
+#selector_adyacente h1 + h2 {
+    color: red;
+}
+
+/* Selector "~": Selector general de hermanos */
+#selector_hermanos h1 ~ h2 {
+    color: violet;
+}
+
+/* Selector ":not()": Selector de negación */
+.azul {
+    color: blue;
+}
+
+.rojo {
+    color: red;
+}
+
+.verde {
+    color: green;
+}
+
+#selector_negacion p:not(.verde) {
+    background: peru;
+}
+
+/* Selector "[attr]": Selector de atributo */
+#selector_atributo p[lang] {
+    color: green;
+}
+
+#selector_atributo p[lang=it] {
+    background-color: grey;
+}

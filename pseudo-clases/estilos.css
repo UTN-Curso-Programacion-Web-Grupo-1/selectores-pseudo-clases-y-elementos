@@ -1,0 +1,130 @@
+div[id] {
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+/* Pseudo Clase ':visited'. Permite agregar una regla CSS a un link visitado por el usuario */
+#links a:visited {
+    color: red;
+}
+
+/* Pseudo Clase ':link'. Permite agregar una regla CSS a un link que AUN NO fue visitado por el usuario */
+#links a:link {
+    color: green;
+}
+
+/* Pseudo Clase ':active'. Permite agregar una regla CSS a un link que esta siendo clickeado por el usuario */
+#links a:active {
+    background: purple;
+}
+
+/* Pseudo Clase ':hover'. Permite agregar una regla CSS a un elemento html sobre el cual el usuario posa su mouse */
+#navegacion ul {
+    background: blueviolet;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#navegacion li {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+#navegacion a {
+    color: white;
+    text-decoration: none;
+}
+
+#navegacion li:hover {
+    background: lightpink;
+}
+
+#navegacion li:hover a {
+    color: black;
+}
+
+/* Pseudo Clase ':focus'. Permite agregar una regla CSS a un elemento html sobre se esta haciendo foco */
+#focus input:focus {
+    background: blueviolet;
+}
+
+/* Pseudo Clase ':nth-child(n)'. Permite agregar una regla CSS al hijo enesimo de su padre */
+#enesimo li:nth-child(4) {
+    background: blueviolet;
+}
+/* odd <=> 2n-1 (Selecciona los impares)*/
+#enesimo li:nth-child(odd) {
+    color: blue;
+}
+/* even <=> 2n (Selecciona los pared)*/
+#enesimo li:nth-child(even) {
+    color: red;
+}
+/* 3n -> 1 cada 3 */
+#enesimo li:nth-child(3n) {
+    text-decoration: 1px underline black;
+}
+/* 3n-1 -> 1 cada 3, menos 1 */
+#enesimo li:nth-child(3n-1) {
+    text-decoration: 1px line-through black;
+}
+/* -n+3 -> Selecciona los primeros 3 elementos */
+#enesimo li:nth-child(-n+3) {
+    font-weight: bold;
+}
+
+/* Pseudo Clase ':first-child'. Permite agregar una regla CSS al primer hijo de su padre */
+/* :nth-child(1) <=> :nth-child(-n+1) <=> :first-child */
+#enesimo li:first-child {
+    text-transform: uppercase;
+}
+
+/* Pseudo Clase ':last-child'. Permite agregar una regla CSS al ultimo hijo de su padre */
+/* :nth-last-child(1) <=> :nth-last-child(-n+1) <=> :last-child */
+#enesimo li:last-child {
+    text-transform: uppercase;
+}
+
+/* Pseudo Clase ':only-child'. Permite agregar una regla CSS al hijo que es unico */
+#unico :only-child {
+    color: red;
+}
+
+/* Pseudo Clase ':nth-of-type()'. Permite agregar una regla CSS al hijo enesimo de su padre pero que tenga la misma etiqueta */
+#tipo span:nth-of-type(3) {
+    color: red;
+}
+
+#tipo p :nth-child(3) {
+    color: purple;
+}
+
+/* Pseudo Clase ':only-of-type'. Permite agregar una regla CSS al hijo que es unico de su tipo en el padre*/
+#unico_tipo :only-of-type {
+    color: red;
+}
+
+/* Pseudo Clase ':disabled'. Permite agregar una regla CSS al elemento este deshabilitado */
+#formulario input:disabled {
+    background: lightslategrey;
+}
+
+/* Pseudo Clase ':enabled'. Permite agregar una regla CSS al elemento este habilitados */
+#formulario input:enabled {
+    background: lightyellow;
+}
+
+/* Pseudo Clase ':required'. Permite agregar una regla CSS al elemento sea obligatorio */
+#formulario input:required {
+    background: lightseagreen;
+}
+
+/* Pseudo Clase ':empty'. Permite agregar una regla CSS al elemento cuyo contenido este vacio */
+#vacio div {
+    height: 50px;
+}
+
+#vacio div:empty {
+    background: lightseagreen;
+}

@@ -1,0 +1,34 @@
+/* Pseudo-Elemento ::first-line (Selecciona la primer linea de un texto) */
+p::first-line {
+    color: violet;
+}
+
+/* Pseudo-Elemento ::first-letter (Selecciona la primer letra de un texto) */
+p::first-letter {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* Pseudo-Elemento ::before (Agrega un contenido antes del inicio del contenido real del elemento) */
+div::before {
+    content: 'Nuevo!';
+    color: red;
+    background: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Pseudo-Elemento ::after (Agrega un contenido despues del find del contenido real del elemento) */
+div::after {
+    content: 'El fin..';
+    color: blueviolet;
+    background: brown;
+    text-transform: uppercase;
+    text-decoration: wavy;
+}
+
+/* Pseudo-Elemento ::selection (Agrega una regla css al fragmento de texto seleccionado) */
+::selection {
+    background: brown;
+    color: white;
+}
